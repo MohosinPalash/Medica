@@ -1,19 +1,19 @@
-.service-div{
+.doctor-div{
     padding: 10px;
     border-radius: 5px;
     box-shadow:  0px 7px 29px 0px rgba(52, 52, 54, 0.5);
 }
-.service-div:hover{
+.doctor-div:hover{
     background-color: rgb(191, 227, 240);
     box-shadow:  0px 7px 29px 0px rgba(52, 52, 54, 0.5);
 }
-.service-cover{
+.doctor-cover{
     border-radius: 50%;
     width: 70%;
     height: 70%;
     margin: 0 auto;
 }
-.service-icon{
+.doctor-icon{
     border-radius: 50%;
     margin-top: -20%;
     width: 30%;
@@ -31,13 +31,13 @@
     color: white;
 }
 @media only screen and (max-width: 688px){
-    .service-intro{
+    .doctor-intro{
         height: 100px;
     }
 }
 /* Responsive customization for mobile phone */
 @media only screen and (min-width: 689px) and (max-width: 991px){
-    .service-intro{
+    .doctor-intro{
         height: 150px;
     }
 }

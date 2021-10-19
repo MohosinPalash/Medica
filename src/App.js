@@ -6,6 +6,8 @@ import Header from './Pages/Shared/Header/Header'
 import Home from './Pages/Home/Home/Home';
 import Doctor from './Pages/Doctor/Doctor/Doctor';
 import Blog from './Pages/Blog/Blog/Blog';
+import NotFound from './Pages/NotFound/NotFound';
+import ServiceDetails from './Pages/ServiceDetails/ServiceDetails';
 function App() {
   useEffect(() => {
     document.title = "MEDICA";
@@ -26,6 +28,12 @@ function App() {
           </Route>
           <Route exact path="/blog">
             <Blog></Blog>
+          </Route>
+          <Route exact path="/serviceDetails/:serviceId">
+            <ServiceDetails></ServiceDetails>
+          </Route>
+          <Route path="*">
+            <NotFound></NotFound>
           </Route>
         </Switch>
       </BrowserRouter>

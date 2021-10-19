@@ -7,6 +7,7 @@ import SingleService from '../SingleService/SingleService';
 import './Home.css'
 import SingleDoctor from '../../Shared/SingleDoctor/SingleDoctor';
 import SingleBlog from '../../Shared/SingleBlog/SingleBlog';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
 
@@ -50,14 +51,14 @@ const Home = () => {
                     someDoctors.map(doctor => <SingleDoctor doctor={doctor}></SingleDoctor>)
                 }
             </div>
-            <button className="button">See All Doctors</button>
+            <Link to="/doctor"><button className="button">See All Doctors</button></Link>
             <h1 className="heading">NEWS & EVENTS</h1>
             <div className="blog-container">
                 {
                     someBlogs.map(blog => <SingleBlog blog={blog}></SingleBlog>)
                 }
             </div>
-            <button className="button">See More News</button>
+            <Link to="/blog"><button className="button">See More News</button></Link>
         </div>
     );
 };
