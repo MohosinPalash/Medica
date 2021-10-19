@@ -1,0 +1,43 @@
+.service-div{
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow:  0px 7px 29px 0px rgba(52, 52, 54, 0.5);
+}
+.service-div:hover{
+    background-color: rgb(191, 227, 240);
+    box-shadow:  0px 7px 29px 0px rgba(52, 52, 54, 0.5);
+}
+.blog-div{
+    display: flex;
+}
+.blog-cover{
+    border-radius: 10px;
+    width: 100%;
+    /* height: 100%; */
+    margin: 0 auto;
+}
+.blog-article{
+    height: 200px;
+}
+.details-button{
+    width: 50%;
+    margin: 5px auto;
+    border: 3px solid rgb(89, 104, 109);
+    background-color: white;
+}
+.details-button:hover{
+    border: 3px solid black;
+    background-color: rgb(89, 104, 109);
+    color: white;
+}
+@media only screen and (max-width: 688px){
+    .service-intro{
+        height: 100px;
+    }
+}
+/* Responsive customization for mobile phone */
+@media only screen and (min-width: 689px) and (max-width: 991px){
+    .service-intro{
+        height: 150px;
+    }
+}

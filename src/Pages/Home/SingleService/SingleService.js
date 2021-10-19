@@ -8,7 +8,7 @@ const SingleService = (props) => {
     return (
         <Col>
             <Card className="service-div">
-                <Card.Img variant="top" className="service-cover" src={pic} />
+                <Card.Img variant="top" className="" src={pic} />
                 <Card.Body>
                     <Card.Img variant="top" className="service-icon" src={icon} />
                     <Card.Title className="service-title"><strong>{service}</strong></Card.Title>
