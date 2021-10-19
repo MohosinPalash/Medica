@@ -1,14 +1,13 @@
 
-.doctor-container{
+.blog-container{
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-gap: 20px;
     justify-content: center;
     align-items: center;
     text-align: center;
     padding: 3% 10%;
 }
-
 .heading{
     font-weight: 600;
     margin-top: 10px;
@@ -25,15 +24,13 @@
     color: white;
 }
 @media only screen and (max-width: 688px){
-    
-    .doctor-container{
+    .blog-container{
         grid-template-columns: repeat(1, 1fr);
     }
-    
 }
 /* Responsive customization for mobile phone */
 @media only screen and (min-width: 689px) and (max-width: 991px){
-    .doctor-container{
-        grid-template-columns: repeat(2, 1fr);
+    .blog-container{
+        grid-template-columns: repeat(1, 1fr);
     }
 }
