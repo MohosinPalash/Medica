@@ -1,0 +1,10 @@
+.profile-pic{
+    height: 50%;
+    width: 50%;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+.logout-option{
+    cursor: pointer;
+    color: white;
+}

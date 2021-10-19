@@ -8,35 +8,43 @@ import Doctor from './Pages/Doctor/Doctor/Doctor';
 import Blog from './Pages/Blog/Blog/Blog';
 import NotFound from './Pages/NotFound/NotFound';
 import ServiceDetails from './Pages/ServiceDetails/ServiceDetails';
+import Login from './Pages/Login/Login/Login';
+import AuthProvider from './contexts/AuthProvider';
+import PrivateRoute from './Pages/Login/PrivateRoute/PrivateRoute';
 function App() {
   useEffect(() => {
     document.title = "MEDICA";
   }, [])
   return (
     <div className="App">
-      <BrowserRouter>
-        <Header></Header>
-        <Switch>
-          <Route exact path="/">
-            <Home></Home>
-          </Route>
-          <Route exact path="/home">
-            <Home></Home>
-          </Route>
-          <Route exact path="/doctor">
-            <Doctor></Doctor>
-          </Route>
-          <Route exact path="/blog">
-            <Blog></Blog>
-          </Route>
-          <Route exact path="/serviceDetails/:serviceId">
-            <ServiceDetails></ServiceDetails>
-          </Route>
-          <Route path="*">
-            <NotFound></NotFound>
-          </Route>
-        </Switch>
-      </BrowserRouter>
+      <AuthProvider>
+        <BrowserRouter>
+          <Header></Header>
+          <Switch>
+            <Route exact path="/">
+              <Home></Home>
+            </Route>
+            <Route exact path="/home">
+              <Home></Home>
+            </Route>
+            <Route exact path="/doctor">
+              <Doctor></Doctor>
+            </Route>
+            <Route exact path="/blog">
+              <Blog></Blog>
+            </Route>
+            <Route exact path="/login">
+              <Login></Login>
+            </Route>
+            <PrivateRoute exact path="/serviceDetails/:serviceId">
+              <ServiceDetails></ServiceDetails>
+            </PrivateRoute>
+            <Route path="*">
+              <NotFound></NotFound>
+            </Route>
+          </Switch>
+        </BrowserRouter>
+      </AuthProvider>
     </div>
   );
 }
