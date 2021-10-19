@@ -1,9 +1,26 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import services from '../../../AllData/services.json'
+import SingleService from '../SingleService/SingleService';
+import './Home.css'
 
 const Home = () => {
+
+    const [service, setSevice] = useState([]);
+
+    useEffect(() => {
+        setSevice(services);
+        console.log(services);
+    }, [service]);
+
     return (
         <div>
-            <h2>Home</h2>
+            <h1 style={{ fontWeight: 700 }}>OUR SERVICES</h1>
+            <div className="service-container">
+
+                {
+                    service.map(service => <SingleService service={service}></SingleService>)
+                }
+            </div>
         </div>
     );
 };
