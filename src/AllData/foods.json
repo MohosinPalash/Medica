@@ -1,0 +1,58 @@
+[
+    {
+        "f_id": 1,
+        "image": "https://i.ibb.co/B3FVCh5/f1-orange.jpg",
+        "item": "Orange",
+        "calorie": 47,
+        "consume": 350
+    },
+    {
+        "f_id": 2,
+        "image": "https://i.ibb.co/tsPXHhV/f2-grape.jpg",
+        "item": "Grape",
+        "calorie": 67,
+        "consume": 200
+    },
+    {
+        "f_id": 3,
+        "image": "https://i.ibb.co/QFKtgfF/f3-pumkin.jpg",
+        "item": "Pumpkin",
+        "calorie": 26,
+        "consume": 400
+    },
+    {
+        "f_id": 4,
+        "image": "https://i.ibb.co/mGCN0fM/f4-maize.jpg",
+        "item": "Maize",
+        "calorie": 381,
+        "consume": 50
+    },
+    {
+        "f_id": 5,
+        "image": "https://i.ibb.co/SXmX3JP/f5-capsicum.jpg",
+        "item": "Capsicum",
+        "calorie": 31,
+        "consume": 100
+    },
+    {
+        "f_id": 6,
+        "image": "https://i.ibb.co/HxH4VWc/f6-papaya.jpg",
+        "item": "Papaya",
+        "calorie": 32,
+        "consume": 500
+    },
+    {
+        "f_id": 7,
+        "image": "https://i.ibb.co/nz2tq3m/f7-apple.jpg",
+        "item": "Apple",
+        "calorie": 52,
+        "consume": 250
+    },
+    {
+        "f_id": 8,
+        "image": "https://i.ibb.co/DQYTt9k/f8-kiwi.jpg",
+        "item": "Kiwi Fruit",
+        "calorie": 61,
+        "consume": 200
+    }
+]

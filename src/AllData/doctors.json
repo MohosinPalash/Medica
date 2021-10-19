@@ -1,0 +1,58 @@
+[
+    {
+        "d_id": 1,
+        "dp": "https://i.ibb.co/tQnFC71/d1.jpg",
+        "name": "Dr. Albert Steyn",
+        "branch": "Dhanmondi",
+        "schedule": "SAT-MON-WED"
+    },
+    {
+        "d_id": 2,
+        "dp": "https://i.ibb.co/JzYgLN8/d2.jpg",
+        "name": "Dr. Areial Roi ",
+        "branch": "Narayanganj",
+        "schedule": "SUN-TUE-THURS"
+    },
+    {
+        "d_id": 3,
+        "dp": "https://i.ibb.co/ysWhSm0/d3.jpg",
+        "name": "Dr. Danniel Sami",
+        "branch": "Banani",
+        "schedule": "SAT-MON-WED"
+    },
+    {
+        "d_id": 4,
+        "dp": "https://i.ibb.co/MBHGhdp/d4.jpg",
+        "name": "Dr. Corrie Andrew",
+        "branch": "Banani",
+        "schedule": "SAT-MON-WED"
+    },
+    {
+        "d_id": 5,
+        "dp": "https://i.ibb.co/drCjGj6/d5.jpg",
+        "name": "Dr. Jeny Andrew",
+        "branch": "Gulshan",
+        "schedule": "SUN-TUE-THURS"
+    },
+    {
+        "d_id": 6,
+        "dp": "https://i.ibb.co/72WVPjp/d6.jpg",
+        "name": "Dr. Stephen John",
+        "branch": "Dhanmondi",
+        "schedule": "SAT-TUE-WED"
+    },
+    {
+        "d_id": 7,
+        "dp": "https://i.ibb.co/kqxzSWf/d7.jpg",
+        "name": "Dr. Marrie Jeny",
+        "branch": "Banani",
+        "schedule": "SUN-TUE-THURS"
+    },
+    {
+        "d_id": 8,
+        "dp": "https://i.ibb.co/VDXSHZ5/d8.jpg",
+        "name": "Dr. MR Rahman",
+        "branch": "Gulshan",
+        "schedule": "SAT-MON-WED"
+    }
+]

@@ -1,0 +1,62 @@
+[
+    {
+        "s_id": 1,
+        "pic": "https://i.ibb.co/H7JY22h/srv1.jpg",
+        "icon": "https://i.ibb.co/QpmZT4F/ic1.png",
+        "service": "Bone Marrow Transplant",
+        "charge": 100000,
+        "intro": "we have a team of experts that are setting benchmarks in the field of Bone Marrow Transplants.",
+        "overview": "Bone marrow is a procedure performed to replace damaged or diseased bone marrow with healthy blood-forming stem cells. The bone marrow procedure is also referred to as a stem cell transplant.Basically, bone marrow is a soft, spongy tissue found in your bones. It is responsible for producing stem blood cells which further give rise to blood cells including red blood cells, white blood cells, and platelets.",
+        "procedure": "The stem cells in your healthy bone marrow are responsible for producing blood cells, especially leukocytes or white blood cells (WBCs) that are essential for the immune system. Blood cancers and associated treatment such as chemotherapy and radiation treatments deplete your bone marrow. Stem cell transplants help in regenerating new cells from the old cells to help your body create more cancer-free cells. The stem cells can be collected either from your own bloodstream or from that of a donor."
+    },
+    {
+        "s_id": 2,
+        "pic": "https://i.ibb.co/xghtxwH/srv2.jpg",
+        "icon": "https://i.ibb.co/vvwVsxK/ic2.png",
+        "service": "Cardiac Surgery",
+        "charge": 150000,
+        "intro": "Our teams of Heart Specialists are highly skilled and experienced in Adult Cardiac Surgeries.",
+        "overview": "The Cardiac Surgery Department at Narayana Health specializes in all kinds of cardiac surgery and is world-renowned for dealing with complex heart problems. We have with us renowned cardiac specialists who perform amongst the world's largest number of heart surgeries and interventional treatment. Innovative techniques and multiple specialists give patients (adult and children including newborns), the advantage of superior therapies and preventive care for disorders of the heart and vascular system (blood vessels).",
+        "procedure": "The aortic valve replacement is an open-heart surgery, operated to remove damaged valves and replace it with a new valve made from animal tissue or synthetic materials. The aortic valve replacement is necessary to be replaced in patients whose valves become narrow ( aortic stenosis) or the valve is leaky (aortic regurgitation). This type of heart surgery is risky and only a few health institutions have a high success rate in India. Narayana’s health Cardiology department has highly specialized and experienced aortic valve surgeons to give another life for thousands of patients through aortic valve replacement treatment."
+    },
+    {
+        "s_id": 3,
+        "pic": "https://i.ibb.co/x3GCLTq/srv3.jpg",
+        "icon": "https://i.ibb.co/F4wwvK4/ic3.png",
+        "service": "Kidney Transplant",
+        "charge": 200000,
+        "intro": "The Kidney Transplant team at Medica is among the most experienced and skilled in Bangladesh. Our Transplant Specialists work together to perform Complex Transplant cases.",
+        "overview": "For patients with compromised kidney function and advanced chronic kidney diseases three treatment options are available- hemodialysis, peritoneal dialysis or a kidney transplant. Depending on the age and the stage of kidney disease, a nephrologist decides the course of treatment. A successful kidney transplant when indicated, provides a better quality of life as it prevents long-term issues related to dialysis.",
+        "procedure": "It is a surgical procedure that involves replacing a failed or poorly functioning kidney with a healthy kidney from a living or deceased donor. In comparison to the never-ending dialysis process, going for a kidney transplant seems like a better treatment choice for kidney failure. In the case of complete kidney failure, one needs to look for the hospitals that offer the best kidney transplant in India. It is the hospitals and nephrologist’s experience that counts during the procedure. Our kidney is the most important organ of human anatomy so care must be taken while choosing the hospital."
+    },
+    {
+        "s_id": 4,
+        "pic": "https://i.ibb.co/102RLwY/srv4.jpg",
+        "icon": "https://i.ibb.co/2vRsbzM/ic4.png",
+        "service": "Gastroenterology",
+        "charge": 50000,
+        "intro": "Our Surgical Gastroenterologists provide comprehensive care for patients with Gastrointestinal Problems that need surgical approach.",
+        "overview": "Surgical Gastroenterology provides state-of-the-art care for patients with gastrointestinal problems that need surgical approach. We provide advanced laparoscopic surgical techniques to patients with various gastrointestinal conditions including gastrointestinal cancers. Patients can get ontologically sound surgeries with minimally invasive technique, therefore ensuring a faster recovery and quick return to normal life. ",
+        "procedure": "We provide advanced laparoscopic surgical techniques to patients with various gastrointestinal conditions including gastrointestinal cancers. Patients can get ontologically sound surgeries with minimally invasive technique, therefore ensuring a faster recovery and quick return to normal life. A surgical gastroenterologist will first evaluate your medical condition. This will help to know whether you are ready for the surgery or not? You may be one of the candidates for surgery, only if you are facing the following issues mentioned below. If you are diagnosed with these symptoms, it is best to reach out to us, immediately."
+    },
+    {
+        "s_id": 5,
+        "pic": "https://i.ibb.co/zNDpgbx/srv5.jpg",
+        "icon": "https://i.ibb.co/cvjy45D/ic5.png",
+        "service": "Dermatology",
+        "charge": 175000,
+        "intro": "Dermatology and Cosmetology are among the most dynamic sciences in the world and we have been successfully serving the need of the patients.",
+        "overview": "There are a variety of medical and cosmetic surgical procedures that dermatologists can perform. While some conditions can be effectively treated with medications and non-invasive techniques, other conditions may require surgery or more invasive treatment.",
+        "procedure": "There are a variety of medical and cosmetic surgical procedures that dermatologists can perform. While some conditions can be effectively treated with medications and non-invasive techniques, other conditions may require surgery or more invasive treatment. Biopsies: Skin biopsies are done for the diagnosis of different skin conditions. They are of three types – shave biopsies, punch biopsies and excision biopsies.Chemical peels: This procedure involves the application of a chemical solution to peel off a layer of the skin. Lying underneath is a layer of regenerated smooth skin. Chemical peels can be used to treat certain types of acne and sun-damaged skin."
+    },
+    {
+        "s_id": 6,
+        "pic": "https://i.ibb.co/K6btw2w/srv6.jpg",
+        "icon": "https://i.ibb.co/L18pgbz/ic6.png",
+        "service": "Plastic Surgery",
+        "charge": 300000,
+        "intro": "Our Plastic Surgery Department provides the Latest and Safest Techniques. Our team of expert surgeons have extensive experience in performing various Cosmetic Procedures.",
+        "overview": "Surgeons at Narayana Health have a solution with an excellent track record of success in high-end cosmetic surgery. Thanks to our team of skilled plastic surgeons backed by advanced surgical facilities and expert nursing care, we follow the latest and safest techniques, often opting for endoscopic procedures with minimal recovery time and discomfort. The services offered include Facelift, Rhinoplasty, lip sculpting, Eyelid Surgery, Breast Reduction, Breast Augmentation, Breast Lift, Tummy Tuck and Body Lift.",
+        "procedure": "Individuals, looking to get fuller-looking lips, go for the lip augmentation procedure. The surgeon uses injectable dermal fillers to increase the lip volume, structure or shape. The procedure doesn’t produce permanent results. A second procedure might be needed after six months to restore the shape and volume. The type of preparation you need to do depends on the type of surgery you went through and the type of anesthesia being administered to you. Plastic surgery may require multiple procedures done in several stages."
+    }
+]
