@@ -2,7 +2,7 @@ import React from 'react';
 import { Container, Nav, Navbar } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import useAuth from '../../../contexts/useAuth';
-
+import logo from '../../../images/Banner/medica-logo.png'
 const Header = () => {
     const { user, logout } = useAuth();
     console.log(user);
@@ -10,7 +10,7 @@ const Header = () => {
         <>
             <Navbar sticky="top" bg="dark" variant="dark" collapseOnSelect expand="lg">
                 <Container>
-                    <Navbar.Brand as={Link} to="/home">MEDICA</Navbar.Brand>
+                    <Navbar.Brand as={Link} to="/home" style={{ fontSize: "25px" }}><img style={{ height: "40px", width: "40px" }} src={logo} alt="" /> MEDICA</Navbar.Brand>
                     <Navbar.Toggle />
                     <Navbar.Collapse className="justify-content-end">
                         <Navbar.Text><Nav.Link as={Link} to="/home">Home</Nav.Link></Navbar.Text>
