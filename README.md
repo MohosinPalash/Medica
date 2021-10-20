@@ -1,12 +1,12 @@
 # PROJECT NAME: MEDICA
 
 This a Health Care Related Project. MEDICA is a renowned hospital in the city. And provide services with a good quality and cheaper rate.
-Live Site Link: 
+Live Site Link: https://medica-48810.web.app/home
 
 
 ## Main Features
 
-In the project directory, there are three sections-
+In this project, there are four sections-
 1. Home: It contains a banner, services list, doctors list and news and events;
 2. Doctor: All the doctors information are available here and there is another healthy foods section here;
 3. News: This section contains some blogs about recent facts about
