@@ -1,40 +1,111 @@
-import React from 'react';
+import React, { useState } from 'react';
 import useAuth from '../../../contexts/useAuth';
 import lock from '../../../images/loginIcons/lock-small.png'
 import user from '../../../images/loginIcons/user-small.png'
+import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword } from "firebase/auth";
 import './Login.css'
 const Login = () => {
     const { googleSignIn } = useAuth();
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
+    const [error, setError] = useState('');
+    const [msg, setMsg] = useState('');
+    const [isLogin, setIsLogin] = useState(false);
+    const auth = getAuth();
+
+    const toggleLogin = e => {
+        setIsLogin(e.target.checked);
+    }
+
+    const handleEmail = e => {
+        setEmail(e.target.value);
+    }
+    const handlePassword = e => {
+        setPassword(e.target.value);
+    }
+
+
+    const handleRegistration = e => {
+        console.log("clicked");
+        e.preventDefault();
+        if (password.length < 8) {
+            setError("Password must be at least 8 characters.");
+            return;
+        }
+
+        isLogin ? userLogin(email, password) : createNewAccount(email, password)
+
+        document.getElementById("email").value = "";
+        document.getElementById("password").value = "";
+
+    }
+    const userLogin = (email, password) => {
+        signInWithEmailAndPassword(auth, email, password)
+            .then((userCredential) => {
+                const user = userCredential.user;
+                console.log(user);
+                setMsg('Login Successful!');
+            })
+            .catch((error) => {
+                setError(error.message);
+            });
+    }
+
+    const createNewAccount = (email, password) => {
+        createUserWithEmailAndPassword(auth, email, password,)
+            .then(result => {
+                const user = result.user;
+                console.log(user);
+                setMsg('Registration Successful!');
+            }).catch(error => {
+                setError(error.message);
+            })
+
+    }
+
     return (
         <div>
             <section style={{ marginTop: "-80px" }}>
                 <div className="box">
                     <div className="form">
-                        <h1>Login</h1>
-                        <form>
-                            <div class="inputBox">
-                                <input type="text" placeholder="Email Address" />
+                        <h1 style={{ color: "white", marginBottom: "20px" }}>{isLogin ? "Login" : "Register"}</h1>
+                        <form onSubmit={handleRegistration}>
+
+                            <div className="inputBox">
+                                <input onBlur={handleEmail} required type="email" name="email" placeholder="Email Address" id="email" />
                                 <img src={user} alt="" />
                             </div>
 
-                            <div class="inputBox">
-                                <input type="password" placeholder="Password" />
+                            <div className="inputBox">
+                                <input onBlur={handlePassword} required type="password" name="password" placeholder="Password" id="password" />
                                 <img src={lock} alt="" />
                             </div>
 
-                            <div class="inputBox">
-                                <input type="submit" value="Login" />
+                            <div className="">
+                                <input onChange={toggleLogin} type="checkbox" name="checkbox" id="" />
+                                <label style={{ color: 'white', marginLeft: "5px" }} htmlFor="checkbox">Check for Login</label>
+                            </div>
+
+                            <div className="inputBox">
+                                <small style={{ color: "white" }}>{error}</small>
+                            </div>
+                            <div className="inputBox">
+                                <small style={{ color: "white" }}>{msg}</small>
+                            </div>
+
+                            <div className="inputBox">
+                                <input type="submit" value={isLogin ? "Login" : "Register"} />
                             </div>
 
                         </form>
-                        <button onClick={googleSignIn} className="btn btn-warning">Sign in with Google</button>
+                        <button onClick={googleSignIn} className="btn btn-warning"><strong>Sign in with Google</strong></button>
 
                     </div>
 
-                </div>
+                </div >
 
-            </section>
-        </div>
+            </section >
+        </div >
     );
 };
 

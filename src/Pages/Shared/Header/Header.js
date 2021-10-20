@@ -20,7 +20,7 @@ const Header = () => {
                             <>
                                 <Navbar.Text style={{ color: "white", cursor: "pointer" }} onClick={logout}>Logout</Navbar.Text>
                                 <Navbar.Text>
-                                    <Nav.Link as={Link} to="/home" style={{ marginTop: "0" }}>Welcome {user?.displayName.split(" ")[0]}<img src={user?.photoURL} style={{
+                                    <Nav.Link as={Link} to="/home" style={{ marginTop: "0" }}>Welcome {user?.displayName}<img src={user?.photoURL} style={{
                                         height: "40px",
                                         width: "40px",
                                         borderRadius: "50%",
