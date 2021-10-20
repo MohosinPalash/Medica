@@ -2,10 +2,11 @@ import React, { useState } from 'react';
 import useAuth from '../../../contexts/useAuth';
 import lock from '../../../images/loginIcons/lock-small.png'
 import user from '../../../images/loginIcons/user-small.png'
-import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword } from "firebase/auth";
+import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, sendEmailVerification, updateProfile } from "firebase/auth";
 import './Login.css'
 const Login = () => {
     const { googleSignIn } = useAuth();
+    const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [error, setError] = useState('');
@@ -15,6 +16,10 @@ const Login = () => {
 
     const toggleLogin = e => {
         setIsLogin(e.target.checked);
+    }
+
+    const handleName = e => {
+        setName(e.target.value);
     }
 
     const handleEmail = e => {
@@ -45,6 +50,7 @@ const Login = () => {
                 const user = userCredential.user;
                 console.log(user);
                 setMsg('Login Successful!');
+                setError('');
             })
             .catch((error) => {
                 setError(error.message);
@@ -56,9 +62,28 @@ const Login = () => {
             .then(result => {
                 const user = result.user;
                 console.log(user);
-                setMsg('Registration Successful!');
+                setMsg('Verification email is sent!');
+                setError('');
+                verifyEmail();
+                updateUserInformation();
             }).catch(error => {
                 setError(error.message);
+            })
+
+    }
+
+    const updateUserInformation = () => {
+        updateProfile(auth.currentUser, {
+            displayName: name
+        }).then(result => { })
+            .catch(error => {
+                setError(error.message);
+            })
+    }
+    const verifyEmail = () => {
+        sendEmailVerification(auth.currentUser)
+            .then(result => {
+                console.log(result);
             })
 
     }
@@ -70,6 +95,11 @@ const Login = () => {
                     <div className="form">
                         <h1 style={{ color: "white", marginBottom: "20px" }}>{isLogin ? "Login" : "Register"}</h1>
                         <form onSubmit={handleRegistration}>
+
+                            {!isLogin && <div className="inputBox">
+                                <input onBlur={handleName} required type="text" name=" name" placeholder="Full Name" id="name" />
+                                <img src={user} alt="" />
+                            </div>}
 
                             <div className="inputBox">
                                 <input onBlur={handleEmail} required type="email" name="email" placeholder="Email Address" id="email" />
